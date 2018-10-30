@@ -30,55 +30,58 @@ skype: 			zeljko.bareta
 
 <?php if ($_POST['url'] == "https://kobocat.unhcr.org/bpmser/forms/apwMFLxovHc7GwML7Udhyr/api"){?>
 
-		<!-- iframe code-->
+		<iframe width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiNzYzNjJiNGMtYTg0Yi00ZmY3LWI1ZjItNjFhMjcxM2UyYTg1IiwidCI6IjUwMDA0YWMxLWIwYmQtNGY4MS05N2QzLTc5NGExNGU3Mjk2NyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
 
 <?php } ?>
 
 <?php if ($_POST['url'] == "https://kobocat.unhcr.org/kosbpm/forms/a2AhTCg5faiPxwuQjbmDM4/api"){?>
 
-		<!-- iframe code-->
+		<iframe width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiNmYxYzkxNzQtODFkYy00YWFiLTg3YTgtYTZhMDA3OWQ0ZjFkIiwidCI6IjUwMDA0YWMxLWIwYmQtNGY4MS05N2QzLTc5NGExNGU3Mjk2NyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
 
 <?php } ?>
 
 <?php if ($_POST['url'] == "https://kobocat.unhcr.org/espbpm/forms/an2dEZHPHRVeFdvzHNS5Tj/api"){?>
 
-		<!-- iframe code-->
+		<iframe width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiZDM5Yjk2ZDgtNDYyMi00MTE2LWFmODgtMDI2MzYyZjg0OTVkIiwidCI6IjUwMDA0YWMxLWIwYmQtNGY4MS05N2QzLTc5NGExNGU3Mjk2NyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
 
 <?php } ?>
 
 <?php if ($_POST['url'] == "https://kobocat.unhcr.org/bpmmkd/forms/apQ8Hjje8uUUqscK4Ypmb8/api"){?>
 
-		<!-- iframe code-->
+		<iframe width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiNGFhMzk2MjgtZmIxZS00NDIxLTkwNDYtODliNDRiNTg0NTBhIiwidCI6IjUwMDA0YWMxLWIwYmQtNGY4MS05N2QzLTc5NGExNGU3Mjk2NyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
 
 <?php } ?>
 
 <?php if ($_POST['url'] == "https://kobocat.unhcr.org/bpmbih/forms/atVf4LismHSf6brUPHvXCb/api"){?>
 
-		<!-- iframe code-->
+		<iframe width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiMmY4N2I2MDUtZGQ1ZS00MzcyLWJlOWYtY2YwNzg1ZTRhYTViIiwidCI6IjUwMDA0YWMxLWIwYmQtNGY4MS05N2QzLTc5NGExNGU3Mjk2NyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
 
 <?php } ?>
 
 <?php if ($_POST['url'] == "https://kobocat.unhcr.org/unhcrbgr/forms/aUyfBMz6sgTY32sSGKmqeu/api"){?>
 
-		<!-- iframe code-->
-		
+		<iframe width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiNDIzMTZiMzctOGIyYi00YWM5LWI2ZWEtZjU5OGNjOTg5OWZmIiwidCI6IjUwMDA0YWMxLWIwYmQtNGY4MS05N2QzLTc5NGExNGU3Mjk2NyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
 <?php } ?>
 
 <?php if ($_POST['url'] == "https://kobocat.unhcr.org/mnebpm/forms/aY6QgqahCbuicbQVFumtbV/api"){?>
 
-		<!-- iframe code-->
+		<iframe width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiZTcyMDdkMGYtZjg1MS00ZDgwLTlmYzgtZmViMDQ1YTBmMWFhIiwidCI6IjUwMDA0YWMxLWIwYmQtNGY4MS05N2QzLTc5NGExNGU3Mjk2NyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
 
 <?php } ?>
 
 <?php if ($_POST['url'] == "https://kobocat.unhcr.org/bpmalb/forms/aYyHgtnMV9uY4FF37rShbR/api"){?>
 
-		<!-- iframe code-->
+		<iframe width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiYzEwMzI0NGItNjQ5Mi00ZGI1LWEwZDctNWM2Mzg0ZWU3OWYzIiwidCI6IjUwMDA0YWMxLWIwYmQtNGY4MS05N2QzLTc5NGExNGU3Mjk2NyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe><br><br>
+
+		<iframe width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiOTZiODViMWItNDc0ZS00YzQ5LWFhZjYtMDI3OWUxMDM2MThkIiwidCI6IjUwMDA0YWMxLWIwYmQtNGY4MS05N2QzLTc5NGExNGU3Mjk2NyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe><br><br>
+
+		<iframe width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiM2ZjMTAxYTItMWZlMi00MTQ2LTkzNDEtMDI1MjU1MTM2YWFkIiwidCI6IjUwMDA0YWMxLWIwYmQtNGY4MS05N2QzLTc5NGExNGU3Mjk2NyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe><br><br>
 
 <?php } ?>
 
 <?php if ($_POST['url'] == "https://kobocat.unhcr.org/grcbpm/forms/aZRkjF9ddM3zZViMBC82Ho/api"){?>
 
-		<!-- iframe code-->
+		<iframe width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiNjRkYTAwZjAtNmQ0Yy00NzY0LWFkZWMtZWUxNWVlMWE4NTgwIiwidCI6IjUwMDA0YWMxLWIwYmQtNGY4MS05N2QzLTc5NGExNGU3Mjk2NyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
 
 <?php } ?>
 

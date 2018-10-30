@@ -143,7 +143,7 @@ skype: 			zeljko.bareta
 			 	</select><br><br>
 				<input type="submit" value="login">
 			</form>
-		<p style="font-style: italic;">Please use the KoBo username and password associated with the selected operation.</br>
+		<p style="font-style: italic;">Please use the KoBo username and password associated with the selected country operation.</br>
 		If you do not have the required credentials, please contact your UNHCR IM focal point.</br>
 		In order to edit records through "KoBo Link", you need to be logged in to KoBo Toolbox sepparately.</p>
 		</div>
@@ -203,6 +203,8 @@ skype: 			zeljko.bareta
 						<th>ID</th>
 						<th>Event Code</th>
 						<th>Type of Event</th>
+						<th>Pushback From</th>
+						<th>Pushback - Violence</th>
 						<th>Event Location</th>
 						<th>Transit Country</th>
 						<th>Group Information</th>
@@ -220,6 +222,8 @@ skype: 			zeljko.bareta
 						<th>ID</th>
 						<th>Code</th>
 						<th>Event</th>
+						<th>Pushback From</th>
+						<th>Pushback - Violence</th>
 						<th>Location</th>
 						<th>Transit Country</th>
 						<th>Group</th>
@@ -253,16 +257,17 @@ skype: 			zeljko.bareta
 						<td><?php echo $item['_id'];?></td>
 						<td><?php if(isset($item['ID/ID01-Code'])){ echo $item['ID/ID01-Code'];}else echo "No Data";?></td>
 						<td><?php echo str_replace("OTHER_PROTECTI", "OTHER", str_replace("SMUGGLING_INCI", "SMUGGLING", str_replace("PUSHBACK_INCID", "PUSHBACK", str_replace("SPOTTED_ARRIVA", "ARRIVAL", str_replace(" ", ", ", strtoupper($item['M05-RepEvent']))))))?></td>
-						<td><?php echo str_replace("_", " ", strtoupper($item['A/A04-Admin2Loc'])) . ", " . str_replace("_", " ", strtoupper($item['A/A041-Municipality']));?></td>
-						<td><?php echo str_replace("MACEDONIA", "FYR MACEDONIA", strtoupper($item['A/A03-TransitCountry']))?></td>
-						<td width="25%"><?php if (isset($item['Poc/Poc_001'])){ foreach($item['Poc/Poc_001'] as $poc)
+						<td><?php if(isset($item['PB/PB03-From'])){echo strtoupper($item['PB/PB03-From']);}else{ echo "N/A";}?></td>
+						<td><?php if(isset($item['PB/PB06-Violence'])){echo str_replace("ARBITRARY ARREST", "ARBITRARY ARREST/DETENTION",str_replace("THEFT EXTORTION", "THEFT/EXTORTION",str_replace("DENIAL ASYLUM", "DENIAL OF ASYLUM", str_replace("_", " ", str_replace(" ", ", ", strtoupper($item['PB/PB06-Violence']))))));}else{ echo "No Data";}?></td>
+
+						<td><?php if(isset($item['A/A04-Admin2Loc'])){echo str_replace("_", " ", strtoupper($item['A/A04-Admin2Loc'])) . ", " . str_replace("_", " ", strtoupper($item['A/A041-Municipality']));}?></td>
+						<td><?php if(isset($item['A/A03-TransitCountry'])){echo str_replace("MACEDONIA", "FYR MACEDONIA", strtoupper($item['A/A03-TransitCountry']));}?></td>
+						<td width="25%"; style ="font-size: 8"><?php if (isset($item['Poc/Poc_001'])){ foreach($item['Poc/Poc_001'] as $poc)
 							{
 								echo $poc['Poc/Poc_001/Poc04-Number'] . " " . strtoupper($poc['Poc/Poc_001/Poc02-Gender']) . " " . strtoupper($poc['Poc/Poc_001/Poc03-Age']) . " from " . str_replace("MACEDONIA", "FYR MACEDONIA",str_replace("_", " ", strtoupper($poc['Poc/Poc_001/Poc01-Nationality']))); if(isset($poc['Poc/Poc_001/PoC05-UAM'])){ echo ", #UASC: " .  strtoupper($poc['Poc/Poc_001/PoC05-UAM']) . "; <br>";}else echo ", #UASC: 0;<br>";
 							}} else echo "No Data";?>
-						</td>
-						
+						</td>						
 						<td>
-
 							<?php if (isset($item['Poc/Poc_001'])){ foreach($item['Poc/Poc_001'] as $poc)
 							{	
 								$total_poc += $poc['Poc/Poc_001/Poc04-Number'];
@@ -274,17 +279,13 @@ skype: 			zeljko.bareta
 						$total_uasc = 0;
 						?>
 						<td>
-
 							<?php if (isset($item['Poc/Poc_001'])){ foreach($item['Poc/Poc_001'] as $poc)
 							{
 								if(isset($poc['Poc/Poc_001/PoC05-UAM'])){ $total_uasc += $poc['Poc/Poc_001/PoC05-UAM'];};
 							}echo $total_uasc;} else echo "No Data";?>
 								
 						</td>
-
-
-
-						<td><?php echo($item['M/M04-RepDate']);?></td>
+						<td><?php if(isset($item['M/M04-RepDate'])){echo($item['M/M04-RepDate']);}?></td>
 						<td><?php echo strtoupper($item['M/M02-RepOrg']);
 						
 						 if (isset($item['M/M03-RepIndv'])){echo " / " . $item['M/M03-RepIndv'];};
