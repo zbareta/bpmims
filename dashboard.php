@@ -30,43 +30,41 @@ skype: 			zeljko.bareta
 
 <?php if ($_POST['url'] == "https://kobocat.unhcr.org/bpmser/forms/apwMFLxovHc7GwML7Udhyr/api"){?>
 
-		<iframe width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiNzYzNjJiNGMtYTg0Yi00ZmY3LWI1ZjItNjFhMjcxM2UyYTg1IiwidCI6IjUwMDA0YWMxLWIwYmQtNGY4MS05N2QzLTc5NGExNGU3Mjk2NyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
-
+		<!-- Power BI dashboard embed code goes here -->
 <?php } ?>
 
 <?php if ($_POST['url'] == "https://kobocat.unhcr.org/kosbpm/forms/a2AhTCg5faiPxwuQjbmDM4/api"){?>
 
-		<iframe width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiNmYxYzkxNzQtODFkYy00YWFiLTg3YTgtYTZhMDA3OWQ0ZjFkIiwidCI6IjUwMDA0YWMxLWIwYmQtNGY4MS05N2QzLTc5NGExNGU3Mjk2NyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
-
+		<!-- Power BI dashboard embed code goes here -->
+	
 <?php } ?>
 
 <?php if ($_POST['url'] == "https://kobocat.unhcr.org/espbpm/forms/an2dEZHPHRVeFdvzHNS5Tj/api"){?>
 
-		<iframe width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiZDM5Yjk2ZDgtNDYyMi00MTE2LWFmODgtMDI2MzYyZjg0OTVkIiwidCI6IjUwMDA0YWMxLWIwYmQtNGY4MS05N2QzLTc5NGExNGU3Mjk2NyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
-
+		<!-- Power BI dashboard embed code goes here -->
+	
 <?php } ?>
 
 <?php if ($_POST['url'] == "https://kobocat.unhcr.org/bpmmkd/forms/apQ8Hjje8uUUqscK4Ypmb8/api"){?>
 
-		<iframe width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiNGFhMzk2MjgtZmIxZS00NDIxLTkwNDYtODliNDRiNTg0NTBhIiwidCI6IjUwMDA0YWMxLWIwYmQtNGY4MS05N2QzLTc5NGExNGU3Mjk2NyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
-
+		<!-- Power BI dashboard embed code goes here -->
 <?php } ?>
 
 <?php if ($_POST['url'] == "https://kobocat.unhcr.org/bpmbih/forms/atVf4LismHSf6brUPHvXCb/api"){?>
 
-		<iframe width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiMmY4N2I2MDUtZGQ1ZS00MzcyLWJlOWYtY2YwNzg1ZTRhYTViIiwidCI6IjUwMDA0YWMxLWIwYmQtNGY4MS05N2QzLTc5NGExNGU3Mjk2NyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
-
+		<!-- Power BI dashboard embed code goes here -->
 <?php } ?>
 
 <?php if ($_POST['url'] == "https://kobocat.unhcr.org/unhcrbgr/forms/aUyfBMz6sgTY32sSGKmqeu/api"){?>
 
-		<iframe width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiNDIzMTZiMzctOGIyYi00YWM5LWI2ZWEtZjU5OGNjOTg5OWZmIiwidCI6IjUwMDA0YWMxLWIwYmQtNGY4MS05N2QzLTc5NGExNGU3Mjk2NyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
-<?php } ?>
+	<!-- Power BI dashboard embed code goes here -->
+		
+	<?php } ?>
 
 <?php if ($_POST['url'] == "https://kobocat.unhcr.org/mnebpm/forms/aY6QgqahCbuicbQVFumtbV/api"){?>
 
-		<iframe width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiZTcyMDdkMGYtZjg1MS00ZDgwLTlmYzgtZmViMDQ1YTBmMWFhIiwidCI6IjUwMDA0YWMxLWIwYmQtNGY4MS05N2QzLTc5NGExNGU3Mjk2NyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
-
+	<!-- Power BI dashboard embed code goes here -->
+	
 <?php } ?>
 
 <?php if ($_POST['url'] == "https://kobocat.unhcr.org/ebbpm/forms/aaosGUEkojjVtGyJ7MXTvy/api"){?>
