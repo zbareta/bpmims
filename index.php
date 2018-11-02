@@ -131,7 +131,7 @@ skype: 			zeljko.bareta
 				Country:<br>
 				<select style="width: 200px" name="url">
 					<option value="no">--Select Operation--</option>
-				    <option value="https://kobocat.unhcr.org/bpmalb/forms/aYyHgtnMV9uY4FF37rShbR/api">Albania</option>
+				    <option value="https://kobocat.unhcr.org/ebbpm/forms/aaosGUEkojjVtGyJ7MXTvy/api">Albania</option>
 				    <option value="https://kobocat.unhcr.org/bpmbih/forms/atVf4LismHSf6brUPHvXCb/api">Bosnia & Herzegovina</option>
 				    <option value="https://kobocat.unhcr.org/unhcrbgr/forms/aUyfBMz6sgTY32sSGKmqeu/api">Bulgaria</option>
 				    <option value="https://kobocat.unhcr.org/grcbpm/forms/aZRkjF9ddM3zZViMBC82Ho/api">Greece</option>
@@ -195,6 +195,7 @@ skype: 			zeljko.bareta
 			<input type="hidden" name="password" value=<?php echo $_POST['password'] ?>>
 			<input type="submit" value='View Dashboard'></form>
 		<div>
+			<?php if (test_input($_POST['url']) != "https://kobocat.unhcr.org/ebbpm/forms/aaosGUEkojjVtGyJ7MXTvy/api"){ ?>
 			<table id="data" class="display" cellspacing="0" width="100%" style="font-family:arial; font-size: 13">
 				<thead>
 					<tr>
@@ -296,7 +297,53 @@ skype: 			zeljko.bareta
 					<?php } ?>
 				</tbody>
 			</table>
+		<?php }else{?>
+		<table id="data" class="display" cellspacing="0" width="100%" style="font-family:arial; font-size: 13">
+				<thead>
+					<tr>
+						<th>KoBo Link</th>
+						<th>Event</th>
+						<th>Group Information</th>
+						<th>Reporting Date</th>
+						<th>Reporting Organization</th>
+					</tr>
+				</thead>
+				<tfoot>
+					<tr>
+						<th>Link</th>
+						<th>Event</th>
+						<th>Group</th>
+						<th>Date</th>
+						<th>Reporting Org.</th>
+					</tr>
+				</tfoot>
+				<tbody>
+				<?php
+					$total_poc = 0;
+					$total_uasc = 0;
+					if (!is_array($forms)){
+						ob_end_clean();
+						header('Location: index.php');
+						ob_end_flush();
+						;
+					}
+					foreach($forms as $item){?>
+					<tr>
+						<td><a href=<?php echo substr($_POST['url'], 0, -4) . "/instance#/"?><?php echo $item['_id']?>><?php echo $item['_id']; ?></a></td>
+						<td><?php echo str_replace(" ", ";<br>",(str_replace("other_protecti", "Other",str_replace("smuggling_inci", "Smuggling",(str_replace("pushback_incid", "Pushback",(str_replace("spotted_arriva", "Arrival", $item['metadata/RepInc']))))))));?></td>
+						<td><?php if (isset($item['poc'])){ foreach($item['poc'] as $poc)
+							{
+								echo strtoupper($poc['poc/Age']) . " " . strtoupper($poc['poc/Gender']) . " from " . strtoupper($poc['poc/Nationality']) . " transiting through " . str_replace("MACEDONIA", "FYR MACEDONIA",str_replace("_", " ", strtoupper($poc['poc/TransitCountry']))) . ", persons: " . $poc['poc/Number'] . ";<br>";
+							}} else echo "No Data";?>
+						</td>						
+						<td><?php if(isset($item['metadata/IncidentDate'])){echo($item['metadata/IncidentDate']);}?></td>
+						<td><?php echo strtoupper($item['metadata/RepOrg']);?></td>
+					</tr>
+					<?php } ?>
+				</tbody>
+			</table><?php } ?>
 		</div>
 		<?php } ?>
 	</body>
 </html>
+
