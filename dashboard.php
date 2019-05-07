@@ -69,17 +69,13 @@ skype: 			zeljko.bareta
 
 <?php if ($_POST['url'] == "https://kobocat.unhcr.org/ebbpm/forms/aaosGUEkojjVtGyJ7MXTvy/api"){?>
 
-		<iframe width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiYzEwMzI0NGItNjQ5Mi00ZGI1LWEwZDctNWM2Mzg0ZWU3OWYzIiwidCI6IjUwMDA0YWMxLWIwYmQtNGY4MS05N2QzLTc5NGExNGU3Mjk2NyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe><br><br>
-
-		<iframe width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiOTZiODViMWItNDc0ZS00YzQ5LWFhZjYtMDI3OWUxMDM2MThkIiwidCI6IjUwMDA0YWMxLWIwYmQtNGY4MS05N2QzLTc5NGExNGU3Mjk2NyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe><br><br>
-
-		<iframe width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiM2ZjMTAxYTItMWZlMi00MTQ2LTkzNDEtMDI1MjU1MTM2YWFkIiwidCI6IjUwMDA0YWMxLWIwYmQtNGY4MS05N2QzLTc5NGExNGU3Mjk2NyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe><br><br>
+		
 
 <?php } ?>
 
 <?php if ($_POST['url'] == "https://kobocat.unhcr.org/grcbpm/forms/aZRkjF9ddM3zZViMBC82Ho/api"){?>
 
-		<iframe width="100%" height="100%" src="https://app.powerbi.com/view?r=eyJrIjoiNjRkYTAwZjAtNmQ0Yy00NzY0LWFkZWMtZWUxNWVlMWE4NTgwIiwidCI6IjUwMDA0YWMxLWIwYmQtNGY4MS05N2QzLTc5NGExNGU3Mjk2NyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
+		
 
 <?php } ?>
 
